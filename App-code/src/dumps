@@ -114,7 +114,7 @@ function install_clang_epiclang {
 
 function install_coding_style {
     wget -O - "https://raw.githubusercontent.com/nogebeat/deb-ubuntu-epitech/refs/heads/main/header-epitech.sh" | bash -s
-    wget https://raw.githubusercontent.com/Epitech/coding-style-checker/main/coding-style.sh -P /tmp/
+    wget https://raw.githubusercontent.com/nogebeat/coding-style-checker/main/coding-style.sh -P /tmp/
     chmod +x /tmp/coding-style.sh
     mv /tmp/coding-style.sh /usr/local/bin/coding-style
 }
@@ -131,6 +131,7 @@ function install_new_style {
     cp new-style.sh /usr/local/bin/new-style
     cp lambdananas /usr/local/bin
     chmod +x /usr/local/bin/lambdananas
+    
 }
 
 function final_message {
